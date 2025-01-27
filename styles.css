@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    background-color: #dff3f5;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Reset body margins */
+    padding: 0; /* Reset body padding */
+}
+
+.container {
+    max-width: 65%;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto; /* Center the container */
+}
+
+.bg-Color {
+    background-color: aliceblue;
+}
+
+#inputBox:focus-within {
+    border: 2px solid #26C1AD; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(38, 193, 173, 0.5); /* Light shadow */
+}
+
+input:focus {
+    outline: none !important; /* Remove default outline */
+    box-shadow: none !important; /* Remove default box-shadow */
+    border: none !important; /* Remove border */
+    background-color: aliceblue !important;
+}
+
+label {
+    color: #00474A;
+}
+
+.btn {
+    background-color: #00474A;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.custon-btn {
+    background-color: #26C1AD;
+    transition: background-color 0.3s ease;
+}
+
+.custon-btn:hover {
+    background-color: #00474A;
+}
+
+.btn:hover {
+    background-color: #26C1AD;
+}
+
+.reset-btn {
+    background-color: #26C1AD;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #00474A;
+    color: #ffffff;
+}
+
+.right-column {
+    background-color: #00474A;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.right-column span {
+    font-size: 12px;
+    color: #26C1AD;
+    word-spacing: 2px;
+}
+
+/* Center the container */
+.vh-100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+    margin-bottom: 1rem;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px){
+    .container{
+        max-width: 70%;
+        padding: 1.5rem;
+        margin: 0.7rem;
+        gap: 1rem;
+    }
+} 
+
+@media (max-width: 992px) {
+    .vh-100 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    #heading {
+        margin: 2rem;
+    }
+
+    .container {
+        max-width: 90%; /* Allow more space on smaller screens */
+        padding: 1.5rem;
+        margin: 0 1rem; /* Add margins to prevent touching screen edges */
+    }
+
+    .right-column {
+        margin-top: 1rem;
+    }
+
+    .reset-btn {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid{
+        padding: 0;
+    }
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
